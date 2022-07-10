@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Blaka&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <script src="./script/index.js"></script>
+</head>
+<body>
+    <div class="full_container">
+        <div class="mid" id="mid_choose">
+            <span>
+                <span>
+                    <h1 id="x">X</h1>
+                    <div id="shade_x"></div>
+                </span>
+                <span>
+                    <h1 id="o">O</h1>
+                    <div id="shade_o"></div>
+                </span>
+            </span>
+            <h3>Choose your play mode</h3>
+            <div id="btn_stack">
+                <button id="btn0">With AI</button>
+                <button id="btn1" onclick="playWithBtn()">With a friend</button>
+            </div>
+        </div>
+        <div class="mid" id="pick_side">
+            <h3>Pick your side</h3>
+            <span>
+                <span>
+                    <h1 id="x">X</h1>
+                    <div id="shade_x"></div>
+                </span>
+                <span>
+                    <h1 id="o">O</h1>
+                    <div id="shade_o"></div>
+                </span>
+            </span>
+            <div id="input_cont">
+                <span>
+                    <label>Player X</label>
+                    <input type="text" placeholder="Your username">
+                </span>
+                <span>
+                    <label>Player O</label>
+                    <input type="text" placeholder="Your username">
+                </span>
+                <div id="sub_name">
+                    <button id="btn" onclick="start()">Start</button>
+                </div>
+            </div>
+        </div>
+        <div class="mid" id="game_cont">
+            <div id="name">
+                <small id="player1">Kelvin</small>
+                <div>
+                    <small>0</small>
+                    <small>-</small>
+                    <small>0</small>
+                </div>
+                <small id="player2">Kelvin</small>
+            </div>
+            <div id="game_min">
+                <span>
+                    <button id="play1"></button>
+                    <button id="play2"></button>
+                    <button id="play3"></button>
+                </span>
+                <span>
+                    <button id="play4"></button>
+                    <button id="play5"></button>
+                    <button id="play6"></button>
+                </span>
+                <span>
+                    <button id="play7"></button>
+                    <button id="play8"></button>
+                    <button id="play9"></button>
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
