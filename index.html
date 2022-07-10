@@ -14,6 +14,7 @@
 </head>
 <body>
     <div class="full_container">
+        <!-- Choose Mode -->
         <div class="mid" id="mid_choose">
             <span>
                 <span>
@@ -31,6 +32,7 @@
                 <button id="btn1" onclick="playWithBtn()">With a friend</button>
             </div>
         </div>
+        <!-- Enter Your Name -->
         <div class="mid" id="pick_side">
             <h3>Pick your side</h3>
             <span>
@@ -57,6 +59,8 @@
                 </div>
             </div>
         </div>
+
+        <!-- Game Section -->
         <div class="mid" id="game_cont">
             <div id="name">
                 <small id="player1">Kelvin</small>
@@ -69,20 +73,31 @@
             </div>
             <div id="game_min">
                 <span>
-                    <button id="play1"></button>
-                    <button id="play2"></button>
-                    <button id="play3"></button>
+                    <div id="1" class="play1 cell"></div>
+                    <div id="2" class="play2 cell"></div>
+                    <div id="3" class="play3 cell"></div>
                 </span>
                 <span>
-                    <button id="play4"></button>
-                    <button id="play5"></button>
-                    <button id="play6"></button>
+                    <div id="4" class="play4 cell"></div>
+                    <div id="5" class="play5 cell"></div>
+                    <div id="6" class="play6 cell"></div>
                 </span>
                 <span>
-                    <button id="play7"></button>
-                    <button id="play8"></button>
-                    <button id="play9"></button>
+                    <div id="7" class="play7 cell"></div>
+                    <div id="8" class="play8 cell"></div>
+                    <div id="9" class="play9 cell"></div>
                 </span>
+            </div>
+        </div>
+        <!-- Alert -->
+        <div id="winning_alert">
+            <div id="winner_cont">
+                <h1 id="alert-color">Alert</h1>
+                <p id="alert-content">Are You Sure You want to quit</p>
+                <div id="alert_btn_cont">
+                    <button id="alert-btn-success">Continue</button>
+                    <button id="alert-btn-danger">Cancel</button>
+                </div>
             </div>
         </div>
     </div>

@@ -38,7 +38,6 @@ button {
     background: -webkit-linear-gradient(#9EC7E7, #5C9EED);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
 }
 #mid_choose>span>span>#o{
     background: -webkit-linear-gradient(#F6CE8F, #E88347);
@@ -81,7 +80,7 @@ button {
     background-color: #5C9EED;
     color: #fff;
     padding: 12px 0px;
-    width: 150px;
+    width: 200px;
     border: none;
     outline: none;
     border-radius: 30px;
@@ -94,7 +93,7 @@ button {
     background-color: #fff;
     color: #666;
     padding: 12px 0px;
-    width: 150px;
+    width: 200px;
     border: none;
     outline: none;
     border-radius: 30px;
@@ -175,13 +174,14 @@ button {
     font-size: 14px;
 }
 #input_cont>span>input {
-    padding: 8px 15px;
+    padding: 10px 15px;
     outline: none;
     margin-top: 7px;
     border-radius: 10px;
     border: 0.5px solid rgba(133, 133, 133, 0.4);
     background: #fff;
     color: #666;
+    width: 200px;
 }
 #input_cont>#sub_name {
     display: flex;
@@ -191,10 +191,12 @@ button {
     gap: 30px;
 }
 #input_cont>#sub_name>#btn {
-    background-color: #fff;
-    color: #666;
-    padding: 8px 0px;
-    width: 120px;
+    background-color: #5C9EED;
+    color: #fff;
+    padding: 10px 0px;
+    width: 230px;
+    font-weight: 600;
+    font-size: 18px;
     border: none;
     outline: none;
     border-radius: 10px;
@@ -249,66 +251,140 @@ button {
     justify-content: center;
     align-items: center;
 }
-#game_cont>#game_min>span>button{
+#game_cont>#game_min>span>div{
     width: 70px;
     height: 70px;
     background-color: transparent;
 }
-#game_cont>#game_min>span>#play1{
+.play1{
     border-top: none;
     border-bottom: none;
     border-left: none;
     border-right: 1px solid #666;
 }
-#game_cont>#game_min>span>#play2{
+.play2{
     border-top: none;
     border-bottom: none;
     border-left: none;
     border-right: 1px solid #666;
 }
-#game_cont>#game_min>span>#play3{
+.play3{
     border-top: none;
     border-bottom: none;
     border-left: none;
     border-right: none;
 }
-#game_cont>#game_min>span>#play4{
+.play4{
     border-top: 1px solid #666;
     border-bottom: none;
     border-left: none;
     border-right: 1px solid #666;
 }
-#game_cont>#game_min>span>#play5{
+.play5{
     border-top: 1px solid #666;
     border-bottom: none;
     border-left: none;
     border-right: 1px solid #666;
 }
-#game_cont>#game_min>span>#play6{
+.play6{
     border-top: 1px solid #666;
     border-bottom: none;
     border-left: none;
     border-right: none;
 }
-#game_cont>#game_min>span>#play7{
+.play7{
     border-top: 1px solid #666;
     border-bottom: none;
     border-left: none;
     border-right: 1px solid #666;
 }
-#game_cont>#game_min>span>#play8{
+.play8{
     border-top: 1px solid #666;
     border-bottom: none;
     border-left: none;
     border-right: 1px solid #666;
 }
-#game_cont>#game_min>span>#play9{
+.play9{
     border-top: 1px solid #666;
     border-bottom: none;
     border-left:  none;
     border-right: none;
 }
+/* Alert Section */
+#winning_alert {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, rgba(255,255,255,0.5), rgba(92, 158, 237,0.5));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+#winner_cont {
+    width: 400px;
+    border-radius: 10px;
+    background: #fff;
+    padding: 20px 30px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#alert-color {
+    color: #5C9EED;
+}
+#alert-content {
+    color: #666;
+    margin: 20px 0px;
+    text-transform: capitalize;
+    font-size: larger;
+    text-align: center;
+}
+#alert_btn_cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    font-size: 14px;
+}
+#alert-btn-success {
+    background-color: #5C9EED;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px -1px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0px 0px 6px -1px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 0px 6px -1px rgba(0,0,0,0.4);
+    font-family: Arial, sans-serif;
+}
+#alert-btn-danger {
+    background-color: rgb(191, 35, 35);
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px -1px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0px 0px 6px -1px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 0px 6px -1px rgba(0,0,0,0.4);
+    font-family: Arial, sans-serif;
+}
 @media screen and (max-width: 720px) {
     #mid_choose{width: 100%;}
     #pick_side {width: 100%;}
+}
+@media screen and (max-width: 520px) {
+    #winner_cont {
+        width: 300px;
+    }
 }
