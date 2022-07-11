@@ -44,6 +44,15 @@ button {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    font-weight: bolder;
+    color: #666;
+}
 #mid_choose>span>span>div{
     width: 30%;
     height: 15px;
