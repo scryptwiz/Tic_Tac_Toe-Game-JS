@@ -22,9 +22,13 @@ const clickCell = (e) => {
         spaces[id] = currentPlayer
         e.target.innerText = currentPlayer
         if (playerWon() !==false) {
-            playerText = `${currentPlayer} has won!`
-            let winnig_blocks  = playerWon();
-            winnig_blocks = playerWon();
+            let winning_blocks  = playerWon();
+            winning_blocks.map(cell=>cells[cell].style.backgroundColor='#666')
+            document.getElementById('winning_alert').style.display="flex";
+            document.getElementById('alert-content').innerText=`${currentPlayer} has won!`;
+            document.getElementById('alert-btn-success').innerText=`Restart`;
+            document.getElementById('alert-btn-danger').innerText=`Quit`;
+            return
         }
         currentPlayer = currentPlayer === X_TEXT? O_TEXT : X_TEXT
     }
@@ -51,12 +55,23 @@ const playerWon = () => {
     return false
 }
 
-// restartBtn.addEventListener('click', restart);
-
 const restart = () => {
     spaces.fill(null)
     cells.forEach(cell=> {
         cell.innerText = ''
+        cell.style.backgroundColor=''
     })
-    currentPlayer = X_TEXT
+    currentPlayer = X_TEXT;
+    document.getElementById('winning_alert').style.display="none";
+}
+const quit = () => {
+    spaces.fill(null)
+    cells.forEach(cell=> {
+        cell.innerText = ''
+        cell.style.backgroundColor=''
+    })
+    currentPlayer = X_TEXT;
+    document.getElementById('winning_alert').style.display="none";
+    document.getElementById('game_cont').style.display="none";
+    document.getElementById('mid_choose').style.display="flex";
 }
